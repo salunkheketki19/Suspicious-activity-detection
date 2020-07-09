@@ -1,0 +1,20 @@
+item{
+     id: 1
+     name: "Warning!!!!! Someone is holding a Book"
+}
+item{
+     id: 2
+     name: "Warning!!!!!  Someone is using a Cellphone"
+}
+item{
+     id: 3
+     name: "Warning!!!!!  Someone is holding Cheat"
+}
+item{
+     id: 4
+     name: "Person"
+}
+item{
+     id: 5
+     name: "Warning!!!!!  Someone is wearing a Smartwatch"
+}
