@@ -45,7 +45,7 @@ while cv.waitKey(1) < 0:
         if (time.time() - start_time) > fps_interval:
 
             realtime_fps = fps_count / (time.time() - start_time)
-            fps_count = 0  # 帧数清零
+            fps_count = 0 
             start_time = time.time()
 
         fps_label = 'FPS:{0:.2f}'.format(float(realtime_fps))
@@ -61,11 +61,6 @@ while cv.waitKey(1) < 0:
 
         cv.imshow('Action Recognition based on OpenPose', show)
         video_writer.write(show)
-
-        # # 采集数据，用于训练过程(for training)
-        # joints_norm_per_frame = np.array(pose[-1]).astype(np.str)
-        # f.write(' '.join(joints_norm_per_frame))
-        # f.write('\n')
 
 video_writer.release()
 cap.release()
